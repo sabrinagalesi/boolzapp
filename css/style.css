@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top-bar{
+    width: 100%;
+    height: 150px;
+    background: #009688;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#behind-page{
+    width: 100%;
+    height: calc(100% - 150px);
+    background: #d9dbd4;
+    z-index: 0;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+#contenitor-page{
+    width: 80vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    z-index: 1;
+    background: red;
+    position: relative;
+    display: flex;
+}
+
+#contenitor-side{
+    width: 400px;
+    height: 100%;
+}
+
+#side-page{
+    width: 100%;
+    height: calc(100% - 70px);
+    background: white;
+    overflow: scroll;
+}
+
+#my-account{
+    width: 100%;
+    height: 70px;
+    background: #ededed;
+    border-right: 1px solid #e0e0e0;
+}
+
+#contenitor-components{
+    width: calc(100% - 400px);
+    height: 100%;
+    background: orange;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-page{
+    width: 100%;
+    height: 70px;
+    background: #ededed;
+}
+
+#messages{
+    width: 100%;
+    height: calc(100% - 140px);
+    background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
+    background-size: contain;
+    overflow: scroll;
+}
+
+#bottom-page{
+    width: 100%;
+    height: 70px;
+    background: #f0f0f0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1350px) {
+    #contenitor-page{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+

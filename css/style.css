@@ -42,9 +42,15 @@
 
 #side-page{
     width: 100%;
-    height: calc(100% - 70px);
+    height: calc(100% - 120px);
     background: white;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+#search-box{
+    width: 100%;
+    height: 50px;
+    background: #f7f7f7;
 }
 
 #my-account{
@@ -52,6 +58,8 @@
     height: 70px;
     background: #ededed;
     border-right: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
 }
 
 #contenitor-components{
@@ -71,9 +79,9 @@
 #messages{
     width: 100%;
     height: calc(100% - 140px);
-    background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
+    background-image: url(../img/sfondo2.png);
     background-size: contain;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 #bottom-page{
@@ -82,6 +90,44 @@
     background: #f0f0f0;
 }
 
+#account-image{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contenitor-buttons{
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.contenitor-image{
+    width: 50px; 
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#sora{
+    width: 100px;
+    margin-left: -25px;
+}
+
+.space-for-button{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update{
+    width: 30px;
+    cursor: pointer;
+}
 
 
 
@@ -93,6 +139,7 @@
         height: 100vh;
         margin-top: 0;
         margin-left: 0;
+        overflow-x: scroll;
     }
 }
 

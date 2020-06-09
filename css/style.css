@@ -30,7 +30,6 @@
     margin-top: 5vh;
     margin-left: 10vw;
     z-index: 1;
-    background: red;
     position: relative;
     display: flex;
 }
@@ -51,6 +50,9 @@
     width: 100%;
     height: 50px;
     background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #my-account{
@@ -65,7 +67,6 @@
 #contenitor-components{
     width: calc(100% - 400px);
     height: 100%;
-    background: orange;
     display: flex;
     flex-direction: column;
 }
@@ -109,6 +110,7 @@
     margin-left: 10px;
     border-radius: 30px;
     overflow: hidden;
+    background: red;
 }
 
 #sora{
@@ -129,6 +131,61 @@
     cursor: pointer;
 }
 
+#contenitor-search{
+    width: 370px;
+    height: 40px;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    width: 300px;
+    height: 40px;
+    border:none
+}
+
+#search-img{
+    width: 15px;
+    margin-left: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+.friends-account{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.friends-account:hover{
+    background: #f5f5f5;
+}
+
+.name-account{
+    font-size: 18px;
+    display: block;
+    padding-left: 20px;
+}
+
+#kairi{
+    width: 50px;
+}
+
+#riku{
+    width: 50px;
+    margin-right: -5px; 
+}
+
+#seraphina{
+    width: 100px;
+    margin-left: -30px;
+    margin-top: -10px;
+}
 
 
 

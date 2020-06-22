@@ -176,6 +176,12 @@
     padding-left: 20px;
 }
 
+.account-selected{
+    font-size: 18px;
+    display: block;
+    padding-left: 20px;
+}
+
 #kairi{
     width: 50px;
 }

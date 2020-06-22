@@ -11,12 +11,25 @@
         $("#messages").append("<div class='friend-messages-contenitor'><div class='friend-messages'><span class='messages-written'>ok</span></div></div>")
     }
 
+    function ricercaUtente() {
+        var utenti= $(".name-account");
+        $(utenti).each(function(){
+            var utenteSingolo = $(this).text().trim().toLowerCase();
+            if(utenteSingolo.includes($("#search").val().toLowerCase())) {
+                console.log(utenteSingolo, "account trovato");
+                $(".friends-account").show();
+            } else{
+                $(".friends-account").hide();
+            }
+        })
+    }
+
+
     $(document).ready(function(){
         $("#arrow").click(function(){
             $("#messages").append('<div class="my-messages-contenitor"><div class="my-messages"><span class="messages-written">' + $("#write").val() + '</span></div></div>');
             $("#write").val("");
             setTimeout(rispostaInterlocutore,1000);
         });
+        $("#search").keyup(ricercaUtente);
     })
-
-    //Probabilmente per la ricerca devo usare .filter

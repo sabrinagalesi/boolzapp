@@ -69,6 +69,48 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    display: none;
+}
+
+#first-screen{
+    width: calc(100% - 400px);
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 8px solid #4adf83;
+}
+
+#contenitor-fs-img{
+    width: 350px;
+    height: 350px;
+    border-radius: 1800px;
+    background: yellow;
+    overflow: hidden;
+}
+
+#phone{
+    height: 400px;
+    margin-top: -12px;
+}
+
+.title{
+    font-size: 40px;
+    display: block;
+    margin-top: 20px;
+}
+
+.subtitle{
+    font-size: 20px;
+    display: block;
+    width: 700px;
+    margin-top: 20px;
 }
 
 #top-page{
@@ -79,12 +121,13 @@
     justify-content: space-between;
 }
 
-#messages{
+.messages{
     width: 100%;
     height: calc(100% - 140px);
     background-image: url(../img/sfondo2.png);
     background-size: contain;
     overflow-y: scroll;
+    display: none;
 }
 
 #bottom-page{

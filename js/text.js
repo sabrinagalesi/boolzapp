@@ -11,7 +11,7 @@
     */
     
     function rispostaInterlocutore() {
-        $("#messages").append("<div class='friend-messages-contenitor'><div class='friend-messages'><span class='messages-written'>ok</span></div></div>")
+        $(contenitoreMessaggi).append("<div class='friend-messages-contenitor'><div class='friend-messages'><span class='messages-written'>ok</span></div></div>")
     }
 
     function ricercaUtente() {
@@ -29,10 +29,28 @@
 
 
     $(document).ready(function(){
+        $(".friends-account").click(function(){
+            $("#first-screen").hide();
+            $("#contenitor-components").show();
+
+            //Prendere il data attribute di quello che ho cliccato 
+            var attribute = $(this).attr("data-account");
+            console.log(attribute);
+            var contenitoreMessaggi = $(".messages[data-chat='" + attribute + "']") //$( "input[value='Hot Fuzz']" )
+            $(".messages").hide();
+            contenitoreMessaggi.show();
+            
+            console.log(contenitoreMessaggi);
+            //Faccio apparire la conversazione che ho cliccato 
+        })
+
         $("#arrow").click(function(){
-            $("#messages").append('<div class="my-messages-contenitor"><div class="my-messages"><span class="messages-written">' + $("#write").val() + '</span></div></div>');
+            $(contenitoreMessaggi).append('<div class="my-messages-contenitor"><div class="my-messages"><span class="messages-written">' + $("#write").val() + '</span></div></div>');
             $("#write").val("");
             setTimeout(rispostaInterlocutore,1000);
         });
+
         $("#search").keyup(ricercaUtente);
     })
+
+

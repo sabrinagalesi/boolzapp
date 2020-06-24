@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div id="side-page">
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="1">
                         <div class="contenitor-image">
                             <img id="kairi" src="./img/kairi.png"/>
                         </div>
@@ -53,7 +53,7 @@
                             Kairi
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="2">
                         <div class="contenitor-image">
                             <img id="riku" src="./img/riku.jpg"/>
                         </div>
@@ -61,7 +61,7 @@
                             Riku
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="3">
                         <div class="contenitor-image">
                             <img class="seraphina" src="./img/seraphina.png"/>
                         </div>
@@ -69,7 +69,7 @@
                             Seraphina
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="4">
                         <div class="contenitor-image">
                             <img id="red-magnus" src="./img/red-magnus.jpeg"/>
                         </div>
@@ -77,7 +77,7 @@
                             Red Magnus
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="5">
                         <div class="contenitor-image">
                             <img id="laharl" src="./img/laharl.jpeg"/>
                         </div>
@@ -85,7 +85,7 @@
                             Laharl
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="6">
                         <div class="contenitor-image">
                             <img id="flonne" src="./img/flonne.png"/>
                         </div>
@@ -93,7 +93,7 @@
                             Flonne
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="7">
                         <div class="contenitor-image">
                             <img id="prinny" src="./img/prinny.jpeg"/>
                         </div>
@@ -101,7 +101,7 @@
                             Value your life 
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="8">
                         <div class="contenitor-image">
                             <img id="killia" src="./img/Killia2.webp"/>
                         </div>
@@ -109,7 +109,7 @@
                             Killia
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="9">
                         <div class="contenitor-image">
                             <img id="sephiroth" src="./img/SephiHead.jpg"/>
                         </div>
@@ -117,7 +117,7 @@
                             Sephiroth
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="10">
                         <div class="contenitor-image">
                             <img id="cloud" src="./img/cloud.jpg"/>
                         </div>
@@ -125,7 +125,7 @@
                             Cloud
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="11">
                         <div class="contenitor-image">
                             <img id="steiner" src="./img/steiner2.jpg"/>
                         </div>
@@ -133,7 +133,7 @@
                             Steiner
                         </span>
                     </div>
-                    <div class="friends-account">
+                    <div class="friends-account" data-account="12">
                         <div class="contenitor-image">
                             <img id="vivi" src="./img/vivi.jpg"/>
                         </div>
@@ -143,15 +143,21 @@
                     </div>
                 </div>
             </div>
+            <div id="first-screen">
+                <div id="contenitor-fs-img">
+                    <img id="phone" src="./img/phone.jpg"/>
+                </div>
+                <span class="title">
+                    Mantieni il telefono connesso
+                </span>
+                <span class="subtitle">
+                    BoolzApp si collega al tuo telefono per sincronizzare i messaggi. Per ridurre l'utilizzo dei dati, collega il telefono al Wi-Fi.
+                </span>
+            </div>
             <div id="contenitor-components">
                 <div id="top-page">
                     <div id="contenitor-account-selected">
-                        <div class="contenitor-image">
-                            <img class="seraphina" src="./img/seraphina.png"/>
-                        </div>
-                        <span class="name-selected">
-                            Seraphina
-                        </span>
+                        <div class="contenitor-image"></div>
                     </div>
                     <div id="contenitor-icons">
                         <div class="space-for-button">
@@ -165,43 +171,18 @@
                         </div>
                     </div>
                 </div>
-                <div id="messages">
-                    <div class="my-messages-contenitor">
-                        <div class="my-messages">
-                            <span class="messages-written">
-                                Mmmmh...Seraphina?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="friend-messages-contenitor">
-                        <div class="friend-messages">
-                            <span class="messages-written">
-                                Hi! You can call me Seraphina, the Princess Overlord of the Gorgeous Netherworld!!!
-                            </span>
-                        </div>
-                    </div>
-                    <div class="my-messages-contenitor">
-                        <div class="my-messages">
-                            <span class="messages-written">
-                                Okay..Nice to meet you, my name is Sabrina...simply...Sabrina :(
-                            </span>
-                        </div>
-                    </div>
-                    <div class="friend-messages-contenitor">
-                        <div class="friend-messages">
-                            <span class="messages-written">
-                                Ohohohohohohohoh!! Kneel!!! Ohohohohohoh!!
-                            </span>
-                        </div>
-                    </div>
-                    <div class="my-messages-contenitor">
-                        <div class="my-messages">
-                            <span class="messages-written">
-                                :(
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                <div class="messages" data-chat="1"></div>
+                <div class="messages" data-chat="2"></div>
+                <div class="messages" data-chat="3"></div>
+                <div class="messages" data-chat="4"></div>
+                <div class="messages" data-chat="5"></div>
+                <div class="messages" data-chat="6"></div>
+                <div class="messages" data-chat="7"></div>
+                <div class="messages" data-chat="8"></div>
+                <div class="messages" data-chat="9"></div>
+                <div class="messages" data-chat="10"></div>
+                <div class="messages" data-chat="11"></div>
+                <div class="messages" data-chat="12"></div>
                 <div id="bottom-page">
                     <img id="emoji" src="./img/emoji.png"/>
                     <div id="space-to-write">

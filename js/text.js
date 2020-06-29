@@ -11,7 +11,7 @@
     */
     
     function rispostaInterlocutore() {
-        $(contenitoreMessaggi).append("<div class='friend-messages-contenitor'><div class='friend-messages'><span class='messages-written'>ok</span></div></div>")
+        $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display : none;'>Elimina messaggio</div><span class='messages-written'>ok</span></div></div>")
     }
 
     function ricercaUtente() {
@@ -39,18 +39,31 @@
             var contenitoreMessaggi = $(".messages[data-chat='" + attribute + "']") //$( "input[value='Hot Fuzz']" )
             $(".messages").hide();
             contenitoreMessaggi.show();
-            
-            console.log(contenitoreMessaggi);
-            //Faccio apparire la conversazione che ho cliccato 
+
+            //Cerco la src dell'account che ho selezionato, cerco anche il testo, dopodichè devo aggiungerglo allo spazio sopra i messaggi
+            var id= $(this).find("img").attr("id");
+            var img=$(this).find("img").attr("src");
+            var text = $(this).find("span").text().trim();
+            console.log(text);
+            $("#contenitor-account-selected img").attr("id", id).attr("src", img);
+            $("#contenitor-account-selected span").text(text);
         })
 
         $("#arrow").click(function(){
-            $(contenitoreMessaggi).append('<div class="my-messages-contenitor"><div class="my-messages"><span class="messages-written">' + $("#write").val() + '</span></div></div>');
+            $(".messages:visible").append('<div class="my-messages-contenitor"><div class="my-messages"><img class="dropdown" src="./img/arrow.webp"/><div class="delete-msg" style="display: none;">Elimina messaggio</div><span class="messages-written">' + $("#write").val() + '</span></div></div>');
             $("#write").val("");
             setTimeout(rispostaInterlocutore,1000);
         });
 
         $("#search").keyup(ricercaUtente);
+
+        $(".dropdown").click(function(){
+            if($(".delete-msg").is(":visible")){
+                $(".delete-msg").hide();
+            } else{
+                $(".delete-msg").show(); //Mi sembra tutto scritto bene ma non funziona...ragionarci su
+            }
+        })
     })
 
 

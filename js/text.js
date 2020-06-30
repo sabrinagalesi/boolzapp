@@ -11,7 +11,119 @@
     */
     
     function rispostaInterlocutore() {
-        $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display : none;'>Elimina messaggio</div><span class='messages-written'>ok</span></div></div>")
+        var numeroRisposta = Math.floor(Math.random () * 2) + 1;
+        console.log(numeroRisposta);
+        var numeroChat= $(".messages:visible").attr("data-chat");
+        console.log(numeroChat);
+        if(numeroChat == 1){
+            switch(numeroRisposta){
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Wherever you go, I'll be with you <3 </span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'> Ci sono tanti mondi, ma tutti condividono lo stesso cielo. Un solo cielo, un solo destino. </span></div></div>");
+                    break;
+            } 
+        } else if(numeroChat == 2){
+            switch(numeroRisposta){
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Turn to DARKNESS!!!! </span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Sarò io a mangiare la papaya insieme a Kairi, non Sora <3 :D</span></div></div>");
+                    break;
+            }
+        } else if (numeroChat == 3) {
+            switch(numeroRisposta){
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Ohohohohohohohohoh!!</span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>All men are my servants!!</span></div></div>");
+                    break;
+            } 
+        } else if (numeroChat == 4) {
+            switch(numeroRisposta){
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Let's super go!</span></div></div>");
+                    break;
+                case 2: 
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Supeeeeeer......UNIVEEEEERSEEEEEE!!!! </span></div></div>");
+                    break;
+            }
+        } else if (numeroChat == 5) {
+            switch(numeroRisposta){
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>I'll destroy all of you!</span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'> Hahahahahahahaha!!!! </span></div></div>");
+                    break;
+            }
+        } else if (numeroChat == 6) {
+            switch(numeroRisposta) {
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>The power of LOOOVEEEE! </span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Are you okay? </span></div></div>");
+                    break;
+            }
+        } else if(numeroChat == 7) {
+            switch(numeroRisposta) {
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Where would you like to go, dude?</span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>DUDE!</span></div></div>");
+                    break;
+            }
+        } else if(numeroChat == 8){
+            switch(numeroRisposta) {
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Let me thank you.</span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Ultimate demon technique, ultimate skill...MACROOOOOOOCOOSSSSSM!!!!!!</span></div></div>");
+                    break;
+            }
+        } else if(numeroChat == 9){
+            switch(numeroRisposta){
+                case 1: 
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Se è la disperazione che cerchi..allora ti aiuterò a cercarla io! </span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Felice di vederti, Cloud</span></div></div>");
+                    break;
+            }
+        } else if(numeroChat == 10){
+            switch(numeroRisposta){
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>La tua Luce...non perderla di vista. </span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Sephiroth. Tell me if you see him.</span></div></div>");
+                    break;
+            }
+        } else if(numeroChat == 11) {
+            switch(numeroRisposta){
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>MALA TEMPORA CURRUNT!</span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Principessaaaaaa!!!</span></div></div>");
+                    break;
+            }
+        } else if(numeroChat == 12){
+            switch(numeroRisposta){
+                case 1:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>Vogliamo c-credere che l'avere il dono della v-vita in q-questo mondo, non s-sia un e-errore!</span></div></div>");
+                    break;
+                case 2:
+                    $(".messages:visible").append("<div class='friend-messages-contenitor'><div class='friend-messages'><img class='dropdown' src='./img/arrow.webp'/><div class='delete-msg' style='display: none;'>Elimina messaggio</div><span class='messages-written'>S-signorina?</span></div></div>");
+                    break;
+            }
+        }
     }
 
     function ricercaUtente() {
@@ -35,7 +147,6 @@
 
             //Prendere il data attribute di quello che ho cliccato 
             var attribute = $(this).attr("data-account");
-            console.log(attribute);
             var contenitoreMessaggi = $(".messages[data-chat='" + attribute + "']") //$( "input[value='Hot Fuzz']" )
             $(".messages").hide();
             contenitoreMessaggi.show();
@@ -44,7 +155,6 @@
             var id= $(this).find("img").attr("id");
             var img=$(this).find("img").attr("src");
             var text = $(this).find("span").text().trim();
-            console.log(text);
             $("#contenitor-account-selected img").attr("id", id).attr("src", img);
             $("#contenitor-account-selected span").text(text);
         })
@@ -57,13 +167,16 @@
 
         $("#search").keyup(ricercaUtente);
 
-        $(".dropdown").click(function(){
-            if($(".delete-msg").is(":visible")){
-                $(".delete-msg").hide();
-            } else{
-                $(".delete-msg").show(); //Mi sembra tutto scritto bene ma non funziona...ragionarci su
-            }
+        $(document).on('click', '.dropdown', function(){
+            $(this).siblings(".delete-msg").toggle();
+        })
+
+        $(document).on('click', '.delete-msg', function(){
+            $(this).parent().parent().remove();
         })
     })
 
 
+// Poter inviare il messaggio con Invio
+// scrollare la chat per far vedere l'ultimo messaggio inviato
+// Fare un controllo per non inviare messaggi vuoti

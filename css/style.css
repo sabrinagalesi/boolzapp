@@ -318,12 +318,14 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 10px;
 }
 
 .friend-messages-contenitor{
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 10px;
 }
 
 .my-messages{
